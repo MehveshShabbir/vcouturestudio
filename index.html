@@ -10,25 +10,31 @@
       }
 
       .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Full viewport height */
+        width: 100%; /* Full viewport width */
         text-align: center;
         padding: 20px;
         background-color: #fff;
-        border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
 
       .icon {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         margin-bottom: 20px;
       }
 
       .description {
+        font-size: 1.5rem;
         margin-bottom: 20px;
       }
 
       .coming-soon {
-        font-size: 24px;
+        font-size: 2rem;
         font-weight: bold;
       }
 
@@ -36,15 +42,17 @@
         margin-top: 20px;
         font-size: 14px;
         color: #666;
+        text-align: center;
       }
 
       .video-container {
-        display: block; /* Show the video initially */
         position: relative;
         padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        width: 80%; /* Adjust video container width */
+        max-width: 800px; /* Limit to a maximum width */
         height: 0;
         overflow: hidden;
-        margin-bottom: 20px;
+        margin: 20px auto;
       }
 
       .video-container iframe {
