@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VCouture</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .icon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+
+      .description {
+        margin-bottom: 20px;
+      }
+
+      .coming-soon {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .video-container {
+        display: block; /* Show the video initially */
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="./logo.png" alt="Brand Icon" class="icon" />
+      <h2 class="description">Exciting things are coming soon!</h2>
+      
+      <div class="video-container">
+        <iframe
+          id="youtube-video"
+          src="./VCouture_1080p.mp4"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <footer>
+      &copy; Copyright 2024 VCOUTURE 
+    </footer>
+  </body>
+</html>
